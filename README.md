@@ -6,7 +6,7 @@
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). **Do Not change or modify any given function names and input or output formats in both [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Unexpected changes will result in **zero** credit.**
 - For coding questions, there is a black box test for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
 - For submission, please push your answers to Github before the deadline.
-- Deadline: **Tuesday, September 7th by 6:30 pm**
+- Deadline: **Tuesday, Feb 1st by 12 pm**
 - Total: 130 points. 100 points is considered full credit.
 
 ## Question 1 (10 Points. Easy)
@@ -19,7 +19,16 @@ Stack Overflow profile link:
 
 ## Question 2 (20 Points. Medium)
 
-Compute the time complexity of the below functions. Please provide both the computation process and final result for full credit.
+Write a function called **FindAverage**, which returns the average of the inputs of a vector of integers. Use the steps the following steps:
+1. Clearly specify input and output.
+2. Write some example input and outputs. Try to cover corner cases. Feel free to make reasonable assumptions for the corner cases.
+3. Implement your algorithm.
+4. Write several unit tests that cover all corner cases, and test your algorithm using bazel.
+You will need to only submit your algorithm implementation and the unit tests.
+
+## Question 3 (20 Points. Medium)
+
+Compute the worst case run-time complexity of the below functions. Please provide both the computation process and final result for full credit.
 
 ```cpp
 void Example1(int n) {
@@ -58,8 +67,6 @@ void Example3(int n) {
 
 Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
 
-Hint: 1^3 + 2^3 + ... + n^3 = (n(n+1)/2)^2 
-
 Answer:
 
 ```cpp
@@ -80,21 +87,22 @@ Hint: Note the ```i /= 3``` in the outer loop and compute the geometric sequence
 
 Answer:
 
-## Question 3 (10 Points. Easy)
+## Question 4 (10 Points. Easy)
 
-What does it mean when we say that the Quick Sort (QS) algorithm is asymptotically more efficient than the Bubble Sort (BS) algorithm? Support your choice with an explanation.
+What does it mean when we say that the **Heap Sort (HS)** algorithm is asymptotically more efficient than the **Bubble Sort (BS)** algorithm **assuming the input is randomly ordered**? Support your choice with an explanation.
 
-1. QS will always be a better choice for small inputs
-2. BS will always be a better choice for small inputs
-3. QS will always be a better choice for large inputs
-4. BS will always be a better choice for large inputs
-5. QS will always be a better choice for all inputs
-6. BS will always be a better choice for all inputs
+
+1. HS will always be a better choice for small size inputs
+2. BS will always be a better choice for small size inputs
+3. HS will always be a better choice for large size inputs
+4. BS will always be a better choice for large size inputs
+5. HS will always be a better choice for inputs of any size
+6. BS will always be a better choice for inputs of any size
 
 
 Answer:
 
-## Question 4 (10 Points. Medium)
+<!-- ## Question 5 (15 Points. Easy)
 
 Use proof by contradiction to prove that the FindSecondLargest function always finds the second largest value in the input vector.
 
@@ -119,12 +127,11 @@ int FindSecondLargest(std::vector<int> &inputs) {
    return second_largest;
 }
 ```
-Answer:
+Answer: -->
 
-## Question 5 (20 Points. Easy)
+## Question 5 (15 Points. Easy)
 
-Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](src/lib/cpplib.cc) to print your name, email, and any information about you that you want (e.g. your major, your expertise, your interests, etc) and write a test using GTest for your function in [tests/q5_student_test.cc](tests/q5_student_test.cc).
-We will run your code and see your printout!
+Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](src/lib/cpplib.cc) to print your name, email, and any information about you that you want (e.g. your major, your expertise, your interests, etc) and write a test using GTest for your function in [tests/q5_student_test.cc](tests/q5_student_test.cc). We will run your code and see your printout!
 
 Please create your test cases and run the following command to verify the functionality of your program.
 
@@ -132,7 +139,7 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q5_student_test
 ```
 
-## Question 6 (30 Points. Medium)
+## Question 6 (25 Points. Medium)
 
  Write a function ```std::vector<int> CPPLib::Flatten3DVector(const std::vector< std::vector< std::vector<int> > > &input)``` in [cpplib.cc](src/lib/cpplib.cc) to flatten a 3D vector into a 1D vector.
 
@@ -147,7 +154,7 @@ Please create your test cases and run the following command to verify the functi
 ```
 bazel test tests:q6_student_test
 ```
-What is the complexity of your implementation?
+What is the worst case runtime complexity of your implementation?
 
 Answer:
 
@@ -172,6 +179,7 @@ Please create your test cases and run the following command to verify the functi
 ```bash
 bazel test tests:q7_student_test
 ```
+**Hint**: Try to write a recursive relationship.
 What is the complexity of your implementation?
 
 Answer:
