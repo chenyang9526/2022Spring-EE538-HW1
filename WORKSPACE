@@ -1,21 +1,23 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 git_repository(
-    name = "googletest",
+    name = "com_google_googletest",
+    #// Dec 27, 2021
+    commit = "1b18723e874b256c1e39378c6774a90701d70f7a",
     remote = "https://github.com/google/googletest",
-    tag = "release-1.8.1",
+    # tag = "release-1.11.0",
 )
 
 git_repository(
     name = "glog",
     remote = "https://github.com/google/glog.git",
-    tag = "v0.4.0",
+    tag = "v0.5.0",
 )
 
 git_repository(
     name = "com_google_absl",
     remote = "https://github.com/abseil/abseil-cpp.git",
-    tag = "20200225.2",
+    tag = "20211102.0",
 )
 
 git_repository(
@@ -29,7 +31,6 @@ new_local_repository(
     build_file = "third_party/usr_local.BUILD",
     path = "/usr/local",
 )
-
 
 git_repository(
     name = "com_github_gflags_gflags",
