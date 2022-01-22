@@ -102,33 +102,6 @@ What does it mean when we say that the **Heap Sort (HS)** algorithm is asymptoti
 
 Answer:
 
-<!-- ## Question 5 (15 Points. Easy)
-
-Use proof by contradiction to prove that the FindSecondLargest function always finds the second largest value in the input vector.
-
-
-```cpp
-int FindSecondLargest(std::vector<int> &inputs) {
-   if (inputs.size() < 2) {
-       return -1;
-   }
-   int largest = INT32_MIN;
-   for (auto n : inputs) {
-       if (n > largest) {
-           largest = n;
-       }
-   }
-   int second_largest = INT32_MIN;
-   for (auto n : inputs) {
-       if (n > second_largest && n < largest) {
-           second_largest = n;
-       }
-   }
-   return second_largest;
-}
-```
-Answer: -->
-
 ## Question 5 (15 Points. Easy)
 
 Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](src/lib/cpplib.cc) to print your name, email, and any information about you that you want (e.g. your major, your expertise, your interests, etc) and write a test using GTest for your function in [tests/q5_student_test.cc](tests/q5_student_test.cc). We will run your code and see your printout!
