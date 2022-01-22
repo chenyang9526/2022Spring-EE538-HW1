@@ -12,6 +12,8 @@ class CPPLib {
  public:
   std::string PrintHelloWorld();
 
+  // NOTE: write your own function declaration q2 here
+
   // Print your self-introduction
   std::string PrintIntro();
   

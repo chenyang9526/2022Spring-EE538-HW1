@@ -3,6 +3,8 @@
 
 std::string CPPLib::PrintHelloWorld() { return "**** Hello World ****"; }
 
+// NOTE: write your own function declaration q2 here
+
 // Question 5 Print your self-introduction
 std::string CPPLib::PrintIntro() {
     // Please fill up this function.
