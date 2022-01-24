@@ -5,7 +5,7 @@ cc_test(
     srcs = glob(["**/*.cc"]),
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -14,7 +14,7 @@ cc_test(
     srcs = glob(["**/*grader_test.cc"]),
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -23,7 +23,7 @@ cc_test(
     srcs = ["q2_student_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -32,7 +32,7 @@ cc_test(
     srcs = ["q5_student_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -41,7 +41,7 @@ cc_test(
     srcs = ["q6_student_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -50,7 +50,7 @@ cc_test(
     srcs = ["q7_student_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -59,7 +59,7 @@ cc_test(
     srcs = ["q5_grader_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -68,7 +68,7 @@ cc_test(
     srcs = ["q6_grader_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -77,6 +77,6 @@ cc_test(
     srcs = ["q7_grader_test.cc"],
     deps = [
         "//src/lib:CPPLib",
-        "@googletest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
