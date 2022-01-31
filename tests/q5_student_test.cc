@@ -7,5 +7,8 @@
 
 // Add your own tests in this file
 TEST(Q5_Student, ReturnIntro) {
-  EXPECT_EQ(true, true);
+  CPPLib c;
+  std::string str_test = c.PrintIntro();
+  std::string str_check = "Name: Chenyang Zhao, Email: zhao361@usc.edu, Major: BME";
+  EXPECT_EQ(str_test, str_check);
 }

@@ -22,6 +22,15 @@ class CPPLib {
 
   // Climbing Stairs
   int climbStairs(int n);
+
+  //double FindAverage(std::vector<int> input);
+
+  //double FindAverage1(std::vector<int> *input);
+
+  //double FindAverage2(std::vector<int> &input);
+
+  double FindAverage(const std::vector<int> &input);
+
   
   private : 
 };
