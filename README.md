@@ -13,9 +13,15 @@
 
 Create an account on GitHub and Stack Overflow and paste the link to your profile.
 
+<<<<<<< HEAD
 GitHub profile link: https://github.com/chenyang9526
 
 Stack Overflow profile link: https://stackoverflow.com/users/11429023/chenyang-zhao
+=======
+GitHub profile link:
+
+Stack Overflow profile link:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ## Question 2 (20 Points. Medium)
 
@@ -39,7 +45,11 @@ void Example1(int n) {
 }
 ```
 
+<<<<<<< HEAD
 Answer: The iteration runs 1+2*log2(n) times. The run-time complexity is O(log2(n)).
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ```cpp
 void Example2(int n) {
@@ -54,7 +64,11 @@ void Example2(int n) {
 }
 ```
 
+<<<<<<< HEAD
 Answer: The most inner loop runs 1+3*log3(n) operations. The middle loop runs 1+n*(2+(1+3*log3(n))) operations. The most outer loop runs 1+log2(n)*(2+(1+n*(2+(1+3*log3(n))))). So, in total, there are 2+log2(n)*(2+(1+n*(2+(1+3*log3(n))))) operations, which leads to a run-time complexity of log2(n)*log3(n)*n.
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ```cpp
 void Example3(int n) {
@@ -67,7 +81,11 @@ void Example3(int n) {
 
 Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
 
+<<<<<<< HEAD
 Answer: The cout operation was executed sum ^i = n-1 _i=0 (i^3-i) times. Since sum ^i = n-1 _i=0 (i^3) = (n*(n+1)/2)^2, the run-time complexity is O(n^4)
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ```cpp
 int Example4(int n) {
@@ -85,7 +103,11 @@ int Example4(int n) {
 
 Hint: Note the ```i /= 3``` in the outer loop and compute the geometric sequence to get the final result.
 
+<<<<<<< HEAD
 Answer: The first loop is log3(n). The second and third loop is n+n/3+n/9+...+1 = 3/2*(n-1). So the run-time complexity is O(log3(n)*n).
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ## Question 4 (10 Points. Easy)
 
@@ -100,7 +122,11 @@ What does it mean when we say that the **Heap Sort (HS)** algorithm is asymptoti
 6. BS will always be a better choice for inputs of any size
 
 
+<<<<<<< HEAD
 Answer: 3. Asymptotically efficient means when the input has infinite numbers. It is not necessary for some particular small number of inputs. 
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ## Question 5 (15 Points. Easy)
 
@@ -129,7 +155,11 @@ bazel test tests:q6_student_test
 ```
 What is the worst case runtime complexity of your implementation?
 
+<<<<<<< HEAD
 Answer: if the input is n-by-m-by-k, the run-time complexity is O(n*m*k)
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
 
 ## Question 7 (30 Points. Medium)
 
@@ -155,4 +185,8 @@ bazel test tests:q7_student_test
 **Hint**: Try to write a recursive relationship.
 What is the complexity of your implementation?
 
+<<<<<<< HEAD
 Answer: O(2^n)
+=======
+Answer:
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07

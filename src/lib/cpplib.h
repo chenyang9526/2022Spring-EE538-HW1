@@ -22,6 +22,7 @@ class CPPLib {
 
   // Climbing Stairs
   int climbStairs(int n);
+<<<<<<< HEAD
 
   //double FindAverage(std::vector<int> input);
 
@@ -31,6 +32,8 @@ class CPPLib {
 
   double FindAverage(const std::vector<int> &input);
 
+=======
+>>>>>>> 378e23999a8194df859404e6e8dbad41bc662d07
   
   private : 
 };
